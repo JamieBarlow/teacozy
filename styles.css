@@ -77,17 +77,23 @@ main {
 
 #locations {
     display: flex;
-    /* box-sizing: border-box; */
+    flex-wrap: wrap;
     flex: 1 1200px;
     height: 500px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background: center no-repeat url("images/img-locations-background.jpg");
 }
 
+#locations div h2 {
+    margin: 50px 600px 0 600px;
+    align-self: center;
+}
+
 .locationBox {
     width: 300px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 40px;
 }
 
@@ -96,6 +102,8 @@ main {
 }
 
 footer {
+    position: relative;
+    top: 20px;
+    left: 20px;
     float: left;
-    margin: 20px;
 }
