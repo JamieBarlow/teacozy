@@ -1,7 +1,6 @@
 html {
     font-family: helvetica;
     font-size: 22px;
-    color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
@@ -11,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    color: seashell;
 }
 
 #header {
@@ -36,6 +36,10 @@ body {
     color: seashell;
     padding: 10px;
     margin: 10px;
+}
+
+#navbar div a:hover {
+    color: #CAC3BF;
 }
 
 main {
@@ -98,7 +102,7 @@ main {
     top: 40px;
     border: 1px none seashell;
     border-radius: 10px;
-    box-shadow: 0px 3px 2px 1px seashell;
+    box-shadow: 0px 3px 2px 1px #fff5ee;
     background-color:rgba(0, 0, 0, 0.7);
 }
 
@@ -117,4 +121,10 @@ footer {
     top: 20px;
     left: 20px;
     float: left;
+}
+
+/* Fixing issue with internal link destinations hidden by navbar */
+
+#our-mission, #teaOfTheMonth, #locations {
+    scroll-margin-top: 80px;
 }
